@@ -1,5 +1,6 @@
-setup:
+###setup:
 npm i
+nodemon app.js
 
 api doc:
 http://localhost:9000/getByName/
