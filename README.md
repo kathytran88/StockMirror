@@ -1,4 +1,4 @@
-# What it does
+# What does StockMirror do
 🌐 Our platform offers a unique service that enables users to replicate the stock trading behavior of top-performing investors, hence, enriching their portfolio with investors whose trading strategies align with their financial goals.
 
 ✏️ Users type in the name of the investor whose trade they would like to follow and the time range in which they want the trades to be displayed
