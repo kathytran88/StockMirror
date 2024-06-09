@@ -1,9 +1,3 @@
-## Contributors
-Sewon Kim - [Sewon's Github](https://github.com/SewonKim0)<br>
-Alex Jia - [Alex's Github](https://github.com/yaojiejia)<br>
-Kathy Tran - [Kathy's Github](https://github.com/kathytran88)<br>
-Kha Phan - [Kha's Github](https://github.com/KhaPhn)<br>
-
 # What it does
 🌐 Our platform offers a unique service that enables users to replicate the stock trading behavior of top-performing investors, hence, enriching their portfolio with investors whose trading strategies align with their financial goals.
 
@@ -26,3 +20,9 @@ Kha Phan - [Kha's Github](https://github.com/KhaPhn)<br>
 🧩 Implementing middleware in Express.js provided us with a deeper understanding of handling authentication, logging, and error management.
 
 🧩 Building scalable and maintainable UIs using React.js. Breaking down the user interface into reusable components allowed us to efficiently manage and update our application.
+
+# Contributors
+Sewon Kim - [Sewon's Github](https://github.com/SewonKim0)<br>
+Alex Jia - [Alex's Github](https://github.com/yaojiejia)<br>
+Kathy Tran - [Kathy's Github](https://github.com/kathytran88)<br>
+Kha Phan - [Kha's Github](https://github.com/KhaPhn)<br>
