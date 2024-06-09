@@ -1,8 +1,12 @@
 import './App.css';
 import { useRef } from 'react';
+import { useState } from "react";
 
 function App() {
   const nameRef = useRef(null);
+
+  // state: traderData - json format data of the currently selected trader
+  const [ traderData, setTraderData ] = useState(null);
 
   return (
     <div className="container">
@@ -20,9 +24,12 @@ function App() {
           <form onSubmit={async (event) => {
             event.preventDefault();
 
+            // get name
+            const name = nameRef.current.value;
+
             // send ajax to server
             try {
-              const response = await fetch(`/api/getByName/Warren Buffet`, {
+              const response = await fetch(`/api/getByName/${name}`, {
                 method: 'GET',
                 headers: {
                   'Accept': 'application/json',
@@ -30,6 +37,7 @@ function App() {
               });
               const data = await response.json();
               console.log(data); // TEST
+              setTraderData(data);
             } catch (error) {
               console.error('Error fetching data:', error);
             }
@@ -37,13 +45,20 @@ function App() {
             {/* Name */}
             <div className="form-name">
               <label htmlFor="name"> Name: </label>
-              <input type="text" id="name" name="name" required />
+              <input type="text" id="name" name="name" ref={nameRef} required />
             </div>
 
             {/* View Activity */}
-            <button type="submit"> View Activity </button>
+            <div className="form-button">
+              <button type="submit"> View Activity </button>
+            </div> 
           </form>
         </div>
+      </div>
+
+      {/* Output */}
+      <div className="output">
+        <h1 className="output-title"> Results For: {} </h1>
       </div>
     </div>
   );

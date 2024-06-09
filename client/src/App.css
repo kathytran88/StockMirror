@@ -51,3 +51,24 @@
   font-size: 1.1rem;
   padding: 0.2rem;
 }
+.form-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.form-button > button {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.7rem;
+}
+
+/* Output */
+.output {
+  padding: 2rem;
+}
+.output-title {
+  font-weight: normal;
+}
