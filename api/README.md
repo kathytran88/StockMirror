@@ -1,4 +1,4 @@
-###setup:
+setup:
 npm i
 nodemon app.js
 
