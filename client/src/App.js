@@ -67,7 +67,40 @@ function App() {
         <div className="table-window">
           {/* Table */}
           {traderData === null ? <p> No Trader Selected </p> : 
-          <table className="table"></table>}
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Stock Name</th>
+                <th>Portfolio Weight</th>
+                <th>Action</th>
+                <th>Shares Held</th>
+                <th>Current Price</th>
+                <th>Market Value</th>
+                <th>Average Cost</th>
+                <th>% Of Portfolio</th>
+                <th>Low Price</th>
+                <th>High Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              {traderData.map((traderEntry, traderIndex) => {
+                return (
+                  <tr key={traderIndex}>
+                    <td>{traderEntry[0]}</td>
+                    <td>{traderEntry[1]}</td>
+                    <td>{traderEntry[2]}</td>
+                    <td>{traderEntry[3]}</td>
+                    <td>{traderEntry[4]}</td>
+                    <td>{traderEntry[5]}</td>
+                    <td>{traderEntry[7]}</td>
+                    <td>{traderEntry[8]}</td>
+                    <td>{traderEntry[9]}</td>
+                    <td>{traderEntry[10]}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>}
         </div>
       </div>
     </div>
