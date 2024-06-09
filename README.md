@@ -1,5 +1,7 @@
 # StockMirror
-Allow users to copy stock trades from top investors
+A submission to KTByte Hack June, 2024 <br>
+A platform that allow users to copy stock trades from top investors<br>
+
 
 ## Contributors
 Sewon Kim - [Sewon's Github](https://github.com/SewonKim0)<br>
