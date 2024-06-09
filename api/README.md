@@ -1,6 +1,6 @@
-setup:
-npm i
-run server:
+Setup:
+npm install 
+Run server:
 nodemon app.js
 
 api doc:
