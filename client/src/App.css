@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.container {
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+.header {
+  padding: 2rem;
+  background-color: #E8DDDD;
+}
+.header > h1 {
+  font-weight: lighter;
+  margin-bottom: 0.5rem;
+}
+.header > p {
+  font-size: 1.3rem;
+  color: #0F0F0F;
+  margin-bottom: 0.5rem;
+}
+.header > div {
+  border: 1.5px solid black;
+  height: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Main */
+.main {
   color: white;
+  height: 10rem;
+  background-image: url("/public/stock-background.webp");
+}
+.bg-shade {
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  height: 100%;
+  padding: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* Form */
+.form-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-name > label {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+.form-name > input {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.2rem;
 }
