@@ -4,7 +4,7 @@ Run server:
 nodemon app.js
 
 api doc:
-http://localhost:9000/getByName/
+http://localhost:9000/getByName/:name
 will return a json including all the stocks that they currently holding
 example
 http://localhost:9000/getByName/Warren Buffet 
