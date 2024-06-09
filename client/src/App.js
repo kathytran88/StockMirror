@@ -7,6 +7,8 @@ function App() {
 
   // state: traderData - json format data of the currently selected trader
   const [ traderData, setTraderData ] = useState(null);
+  // state: traderName - name of current trader to display on output section
+  const [ traderName, setTraderName ] = useState(null);
 
   return (
     <div className="container">
@@ -36,7 +38,9 @@ function App() {
                 },
               });
               const data = await response.json();
-              console.log(data); // TEST
+
+              // set states as necessary for output display
+              setTraderName(name);
               setTraderData(data);
             } catch (error) {
               console.error('Error fetching data:', error);
@@ -58,7 +62,13 @@ function App() {
 
       {/* Output */}
       <div className="output">
-        <h1 className="output-title"> Results For: {} </h1>
+        <h1 className="output-title"> Results For: {traderName} </h1>
+
+        <div className="table-window">
+          {/* Table */}
+          {traderData === null ? <p> No Trader Selected </p> : 
+          <table className="table"></table>}
+        </div>
       </div>
     </div>
   );

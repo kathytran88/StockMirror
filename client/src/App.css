@@ -71,4 +71,15 @@
 }
 .output-title {
   font-weight: normal;
+  margin-bottom: 1.2rem;
+}
+.table-window {
+  padding: 1.2rem;
+  background-color: rgb(200, 200, 255);
+  border-radius: 0.5rem;
+  border: 3px solid rgb(150, 150, 255);
+  min-height: 10rem;
+}
+.table-window > p {
+  font-size: 1.3rem;
 }

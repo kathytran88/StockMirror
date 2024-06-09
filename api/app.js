@@ -1,16 +1,20 @@
 import express from "express";
 import {spawn} from "child_process"
 
-const app = express();
+const app = express(); 
 
-app.get("/getByName/:name", (req, res) => {
+app.get("/api", (req, res) => {
+    res.json({ message: "API is running" });
+})
+
+app.get("/api/getByName/:name", (req, res) => {
     if (req.params.name === "") {
         res.send("No name provided");
         return;
     }
     try {
         const name = req.params.name;
-        const pythonProcess = spawn('/usr/bin/python3',["scrape.py", name]);
+        const pythonProcess = spawn("C:\\Python311\\python.exe",["scrape.py", name]);
         //print the data
         pythonProcess.stdout.on('data', (data) => {
             const stocks = JSON.parse(data);
