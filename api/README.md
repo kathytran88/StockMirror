@@ -1,5 +1,6 @@
 setup:
 npm i
+run server:
 nodemon app.js
 
 api doc:
