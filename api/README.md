@@ -9,6 +9,8 @@ will return a json including all the stocks that they currently holding
 example
 http://localhost:9000/getByName/Warren Buffet 
 
+
+sewon if you have postman you should try this and see if the json format works expectedly
 | Stock                | Portfolio Weight | Action          | Shares Held    | Current Price | Market Value        |  | Average Cost   | % of Portfolio | Low Price       | High Price      |
 |----------------------|------------------|-----------------|----------------|---------------|---------------------|----|----------------|----------------|-----------------|-----------------|
 | AAPL - Apple Inc.    | 40.81%           | Reduce 12.83%   | 789,368,450    | $171.48       | $135,360,902,000    |  | $196.89        | 14.82%         | $163.63         | $198.57         |
