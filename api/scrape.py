@@ -74,10 +74,6 @@ def scrape_data_for_investor(investor_name):
 
 
 
-# investor_name = "Warren Buffet"
-# data = scrape_data_for_investor(investor_name)
-# print(data)
-
 if __name__ == "__main__":
     
     name = sys.argv[1]
