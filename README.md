@@ -1,3 +1,6 @@
+# Try our website
+Our website is fully hosted here: [http://18.191.236.152:3000/](http://18.191.236.152:3000/)
+
 # What does StockMirror do
 🌐 Our platform offers a unique service that enables users to replicate the stock trading behavior of top-performing investors, hence, enriching their portfolio with investors whose trading strategies align with their financial goals.
 
