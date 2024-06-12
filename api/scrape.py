@@ -52,7 +52,7 @@ def scrape_links(investor_name):
     try:
         html_content = fetch_html("https://www.dataroma.com/m/home.php")
         all_links = parse_links(html_content)
-        investor_links = [(href, name) for href, name in all_links if investor_name in name]
+        investor_links = [(href, name) for href, name in all_links if investor_name.lower() in name.lower()]
         return investor_links
     except Exception as e:
         print(e)
