@@ -14,7 +14,7 @@ app.get("/api/getByName/:name", (req, res) => {
     }
     try {
         const name = req.params.name;
-        const pythonProcess = spawn("C:\\Python311\\python.exe",["scrape.py", name]);
+        const pythonProcess = spawn("'/usr/bin/python3'",["scrape.py", name]);
         //print the data
         pythonProcess.stdout.on('data', (data) => {
             const stocks = JSON.parse(data);
