@@ -37,13 +37,19 @@ function App() {
                   'Accept': 'application/json',
                 },
               });
-              const data = await response.json();
-
-              // set states as necessary for output display
-              setTraderName(name);
-              setTraderData(data);
+            
+              if (response.ok) { // Check if response status is 200
+                const data = await response.json(); // Safely parse JSON
+                setTraderName(name); // Update state
+                setTraderData(data); // Update state
+                console.log("Data fetched:", data); // Debugging output
+              } else {
+                console.error("Failed to fetch data:", response.status);
+                setTraderData(null); // Handle error in data fetching
+              }
             } catch (error) {
               console.error('Error fetching data:', error);
+              setTraderData(null); // Handle error in data fetching
             }
           }}>
             {/* Name */}
