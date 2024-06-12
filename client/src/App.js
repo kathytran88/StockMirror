@@ -31,7 +31,7 @@ function App() {
 
             // send ajax to server
             try {
-              const response = await fetch(`http://3.144.255.196:9000/api/getByName/${name}`, {
+              const response = await fetch(`http://3.144.255.196:2000/api/getByName/${name}`, {
                 method: 'GET',
                 headers: {
                   'Accept': 'application/json',
